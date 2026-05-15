@@ -14,7 +14,7 @@
     "themeName": "git-genspark_dev"
   },
   "limits": {
-    "rewritePerDay": 5,
+    "rewritePerDay": 20,
     "newArticlesPerDay": 5,
     "minQualityScore": 80,
     "maxRetries": 2,

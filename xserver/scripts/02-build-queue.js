@@ -96,6 +96,24 @@ function buildRewriteCandidates({ ga4, scQueries, rankingDrops, rankingRises, an
     const daysLeft = daysUntilDeadline(deadlineDate);
     const deadlineBoost = (daysLeft !== null && daysLeft >= 0 && daysLeft <= 14) ? 10 : 0;
 
+
+    // CTR ギャップ加点: Google が見せているのにクリックされていない記事を最優先化
+    // 期待 CTR は位置別: 1位=28%, 3位=11%, 5位=5%, 7位=3%, 10位=1.5%, 15位=0.7%
+    const avgPosition = (sc.position && sc.position.length > 0)
+      ? sc.position.reduce((acc, q) => acc + q, 0) / sc.position.length
+      : 999;
+    let ctrGapBonus = 0;
+    if (sc.impressions >= 200 && avgPosition >= 4 && avgPosition <= 16) {
+      const expectedCtr = avgPosition <= 5 ? 0.08
+                        : avgPosition <= 8 ? 0.04
+                        : avgPosition <= 11 ? 0.02
+                        : 0.01;
+      const actualCtr = sc.clicks / sc.impressions;
+      const ctrGap = Math.max(0, expectedCtr - actualCtr);
+      const missedClicks = ctrGap * sc.impressions;
+      ctrGapBonus = Math.min(15, missedClicks * 0.3);
+    }
+
     const score =
       (Math.log10(row.pv + 1) * w.pv30day) +
       (Math.log10(sc.impressions + 1) * w.scImpressions) +
@@ -104,7 +122,8 @@ function buildRewriteCandidates({ ga4, scQueries, rankingDrops, rankingRises, an
       ((row.engagementRate < 0.5 ? 1 : 0) * w.lowEngagement) +
       (isDrop ? 5 : 0) + // PV急落は最優先
       deadlineBoost + // 締切 14d 以内は強制 top
-      riseBonus; // 上昇中の記事を増やす投資価値
+      riseBonus + // 上昇中の記事を増やす投資価値
+      ctrGapBonus; // CTR ギャップで損失している記事を強く優先
 
     candidates.push({
       id: Number(post.ID),
