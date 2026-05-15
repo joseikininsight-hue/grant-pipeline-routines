@@ -141,3 +141,23 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# project-specific exclusions
+xserver/node_modules/
+xserver/logs/*.log
+xserver/logs/*.log.*
+xserver/.secrets
+xserver/.cache/
+xserver/output/*.tmp
+*.bak
+*.bak.*
+xserver-snapshot/
+
+# regenerated daily/runtime data (snapshot point-in-time only - not version-controlled)
+xserver/data/
+xserver/queue/
+xserver/output/
+xserver/stats/
+xserver/scripts/sc-daily.json
+xserver/scripts/ga4-daily.json
+xserver/scripts/time-analysis.json

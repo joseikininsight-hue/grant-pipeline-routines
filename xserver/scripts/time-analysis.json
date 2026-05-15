@@ -1,0 +1,406 @@
+{
+  "period": {
+    "startDate": "90daysAgo",
+    "endDate": "today",
+    "generatedAt": "2026-04-29T01:29:28.163Z"
+  },
+  "totalPV": 10025,
+  "hourly": [
+    {
+      "hour": "0",
+      "pv": 285,
+      "users": 234,
+      "engagementSec": 10984
+    },
+    {
+      "hour": "1",
+      "pv": 122,
+      "users": 111,
+      "engagementSec": 2864
+    },
+    {
+      "hour": "2",
+      "pv": 97,
+      "users": 91,
+      "engagementSec": 3401
+    },
+    {
+      "hour": "3",
+      "pv": 65,
+      "users": 61,
+      "engagementSec": 2280
+    },
+    {
+      "hour": "4",
+      "pv": 94,
+      "users": 83,
+      "engagementSec": 4062
+    },
+    {
+      "hour": "5",
+      "pv": 92,
+      "users": 87,
+      "engagementSec": 1673
+    },
+    {
+      "hour": "6",
+      "pv": 163,
+      "users": 144,
+      "engagementSec": 7949
+    },
+    {
+      "hour": "7",
+      "pv": 237,
+      "users": 205,
+      "engagementSec": 8308
+    },
+    {
+      "hour": "8",
+      "pv": 403,
+      "users": 345,
+      "engagementSec": 12840
+    },
+    {
+      "hour": "9",
+      "pv": 538,
+      "users": 422,
+      "engagementSec": 20087
+    },
+    {
+      "hour": "10",
+      "pv": 645,
+      "users": 512,
+      "engagementSec": 21829
+    },
+    {
+      "hour": "11",
+      "pv": 703,
+      "users": 574,
+      "engagementSec": 23324
+    },
+    {
+      "hour": "12",
+      "pv": 558,
+      "users": 484,
+      "engagementSec": 21762
+    },
+    {
+      "hour": "13",
+      "pv": 598,
+      "users": 510,
+      "engagementSec": 18976
+    },
+    {
+      "hour": "14",
+      "pv": 704,
+      "users": 601,
+      "engagementSec": 28512
+    },
+    {
+      "hour": "15",
+      "pv": 826,
+      "users": 627,
+      "engagementSec": 26113
+    },
+    {
+      "hour": "16",
+      "pv": 700,
+      "users": 575,
+      "engagementSec": 26818
+    },
+    {
+      "hour": "17",
+      "pv": 639,
+      "users": 526,
+      "engagementSec": 21475
+    },
+    {
+      "hour": "18",
+      "pv": 443,
+      "users": 371,
+      "engagementSec": 16104
+    },
+    {
+      "hour": "19",
+      "pv": 453,
+      "users": 401,
+      "engagementSec": 14550
+    },
+    {
+      "hour": "20",
+      "pv": 443,
+      "users": 386,
+      "engagementSec": 12822
+    },
+    {
+      "hour": "21",
+      "pv": 444,
+      "users": 384,
+      "engagementSec": 16442
+    },
+    {
+      "hour": "22",
+      "pv": 411,
+      "users": 372,
+      "engagementSec": 14780
+    },
+    {
+      "hour": "23",
+      "pv": 362,
+      "users": 313,
+      "engagementSec": 12169
+    }
+  ],
+  "daily": [
+    {
+      "dayOfWeek": "0",
+      "pv": 1018,
+      "users": 843,
+      "engagementSec": 34441
+    },
+    {
+      "dayOfWeek": "1",
+      "pv": 1614,
+      "users": 1298,
+      "engagementSec": 56073
+    },
+    {
+      "dayOfWeek": "2",
+      "pv": 1890,
+      "users": 1374,
+      "engagementSec": 63394
+    },
+    {
+      "dayOfWeek": "3",
+      "pv": 1507,
+      "users": 1178,
+      "engagementSec": 57221
+    },
+    {
+      "dayOfWeek": "4",
+      "pv": 1546,
+      "users": 1174,
+      "engagementSec": 55190
+    },
+    {
+      "dayOfWeek": "5",
+      "pv": 1411,
+      "users": 1108,
+      "engagementSec": 49102
+    },
+    {
+      "dayOfWeek": "6",
+      "pv": 1039,
+      "users": 868,
+      "engagementSec": 34703
+    }
+  ],
+  "heatmap": [
+    [
+      32,
+      17,
+      11,
+      4,
+      19,
+      15,
+      16,
+      37,
+      41,
+      42,
+      32,
+      51,
+      59,
+      45,
+      56,
+      65,
+      82,
+      60,
+      50,
+      55,
+      63,
+      55,
+      62,
+      49
+    ],
+    [
+      47,
+      16,
+      15,
+      1,
+      12,
+      17,
+      29,
+      39,
+      53,
+      59,
+      127,
+      117,
+      93,
+      112,
+      138,
+      149,
+      122,
+      112,
+      60,
+      77,
+      63,
+      61,
+      48,
+      47
+    ],
+    [
+      34,
+      29,
+      18,
+      7,
+      8,
+      11,
+      17,
+      36,
+      73,
+      102,
+      129,
+      147,
+      102,
+      131,
+      130,
+      205,
+      148,
+      125,
+      86,
+      70,
+      72,
+      60,
+      88,
+      62
+    ],
+    [
+      50,
+      16,
+      14,
+      22,
+      15,
+      12,
+      29,
+      50,
+      86,
+      103,
+      98,
+      117,
+      59,
+      77,
+      107,
+      113,
+      83,
+      74,
+      57,
+      56,
+      79,
+      75,
+      63,
+      52
+    ],
+    [
+      41,
+      17,
+      13,
+      13,
+      16,
+      13,
+      24,
+      25,
+      41,
+      101,
+      107,
+      110,
+      97,
+      99,
+      116,
+      119,
+      101,
+      109,
+      64,
+      84,
+      65,
+      68,
+      48,
+      55
+    ],
+    [
+      36,
+      9,
+      6,
+      8,
+      11,
+      10,
+      15,
+      24,
+      70,
+      79,
+      99,
+      98,
+      86,
+      80,
+      109,
+      119,
+      83,
+      92,
+      75,
+      67,
+      55,
+      66,
+      53,
+      61
+    ],
+    [
+      45,
+      18,
+      20,
+      10,
+      13,
+      14,
+      33,
+      26,
+      39,
+      52,
+      53,
+      63,
+      62,
+      54,
+      48,
+      56,
+      81,
+      67,
+      51,
+      44,
+      46,
+      59,
+      49,
+      36
+    ]
+  ],
+  "deviceShare": {
+    "desktop": "49.7",
+    "mobile": "48.9",
+    "tablet": "1.4",
+    "smart tv": "0.0"
+  },
+  "insights": {
+    "top3Hours": [
+      15,
+      14,
+      11
+    ],
+    "top3DaysOfWeek": [
+      "火",
+      "月",
+      "木"
+    ],
+    "publishOptimalHours": [
+      10,
+      13,
+      14
+    ],
+    "grantPVRatio": "75.8%"
+  }
+}

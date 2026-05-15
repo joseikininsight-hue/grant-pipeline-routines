@@ -1,0 +1,70 @@
+{
+  "ga4": {
+    "propertyId": "506915967",
+    "saPath": "~/.secrets/grants-sa.json",
+    "lookbackDays": 90
+  },
+  "searchConsole": {
+    "siteUrl": "sc-domain:joseikin-insight.com",
+    "lookbackDays": 90
+  },
+  "wordpress": {
+    "publicHtmlPath": "/home/keishi0804/joseikin-insight.com/public_html",
+    "siteUrl": "https://joseikin-insight.com",
+    "themeName": "git-genspark_dev"
+  },
+  "limits": {
+    "rewritePerDay": 5,
+    "newArticlesPerDay": 5,
+    "minQualityScore": 80,
+    "maxRetries": 2,
+    "perWorkerBatch": 2
+  },
+  "scoring": {
+    "weights": {
+      "pv30day": 3,
+      "scImpressions": 1.5,
+      "stalenessYears": 0.5,
+      "rankingDrop": 2,
+      "lowEngagement": 1
+    },
+    "thresholds": {
+      "highPV": 100,
+      "midPV": 30,
+      "lowPV": 1,
+      "scoreFloorForRewrite": 50,
+      "scoreFloorForNew": 30
+    }
+  },
+  "schedule": {
+    "morningBatchHour": 6,
+    "workerHours": [
+      9,
+      12,
+      15,
+      18,
+      21
+    ],
+    "nightBatchHour": 22,
+    "weekendsActive": false
+  },
+  "newArticleSeeds": {
+    "scImpressionMin": 500,
+    "scCtrMax": 0.02,
+    "minMonthlyImpressions": 200
+  },
+  "rss": {
+    "feeds": [
+      "https://www.meti.go.jp/main/rss/main.xml",
+      "https://www.chusho.meti.go.jp/feed/news.xml",
+      "https://www.mhlw.go.jp/stf/news.rdf"
+    ]
+  },
+  "paths": {
+    "data": "../data",
+    "queue": "../queue",
+    "output": "../output",
+    "stats": "../stats",
+    "logs": "../logs"
+  }
+}
